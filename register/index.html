@@ -7,10 +7,10 @@
     <meta name="author" content="Anas Almohsen">
     <title>index</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap-4.3.1/css/bootstrap.min.css">
 
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="login/index.html">
 
     <style>
       .bd-placeholder-img {
@@ -32,40 +32,31 @@
 
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="index.html">Fake Whatsapp</a>
+            <a class="navbar-brand" href="../index.html">Fake Whatsapp</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0" action="login/index.html">
-                  <button id = "btn-no-border-right" class="btn btn-primary my-2 my-sm-0" type="submit">Sign in</button>
-                </form>
-                <form class="form-inline mt-2 mt-md-0" action="register/index.html">
-                  <button id="btn-no-border-left" class="btn btn-primary my-2 my-sm-0" type="submit">Register</button>
-                </form>
             </div>
         </nav>
 
         <main role="main" class="container">
             <div class="jumbotron" style="text-align: center;">
-                <ul style="list-style: none;">
-                  <li>Anas: Hi</li>
-                  <li>Guest: Hello</li>
-                  <li>Me: How r u</li>
-                </ul>
-                <form action="msg/sendmsg.html" method="POST">
-                  <input type="text" name="msg" placeholder="Enter a message">
-                  <input type="submit">
-                </form>
+              <h1>Login</h1>
+              <form action="msg/sendmsg.html" method="POST">
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="Password"><br><br>
+                <input type="submit">
+              </form>
             </div>
         </main>
         
-        <script src="lib/jquery-3.4.1/jquery.slim.min.js"></script>
-        <script src="lib/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/jquery-3.4.1/jquery.slim.min.js"></script>
+        <script src="../lib/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
